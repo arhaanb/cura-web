@@ -6,6 +6,7 @@ import store from './store'
 Vue.config.productionTip = false
 import '@/assets/skeleton.css';
 import '@/assets/bg.css';
+import '@/assets/global.css';
 
 new Vue({
   router,

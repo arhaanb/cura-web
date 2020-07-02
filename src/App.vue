@@ -22,6 +22,7 @@
 </template>
 
 <style>
+
 ::-moz-selection {
   /* Code for Firefox */
   color: #222;
@@ -67,7 +68,7 @@ img,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 0;
+  padding: 1em 0;
 }
 
 #nav a {
