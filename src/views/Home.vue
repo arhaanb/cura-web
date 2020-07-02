@@ -6,8 +6,8 @@
       <div class="five columns text">
         <h1>Cura.</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Let us guide you on your way towards a future immune to COVID-19. Check out our mobile 
+					app for more dynamic content.
         </p>
         <div class="block noselect">
           <button>Download</button>
