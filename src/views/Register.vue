@@ -5,8 +5,9 @@
       <button>Download</button>
     </div>
     <div v-if="!submitted" class="top">
-      <form @submit.prevent="submit" class="six columns submitted">
-        <h2>Register</h2>
+      <form @submit.prevent="submit" class="five columns submitted">
+        <h2 class="zero">Register</h2>
+				<p>Stay safe with Cura.</p>
         <div v-if="error">{{error}}</div>
         <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
 
@@ -18,6 +19,7 @@
           value
           required
           autofocus
+					placeholder="Name"
           v-model="form.name"
         />
 
@@ -31,6 +33,7 @@
           value
           required
           autofocus
+					placeholder="Email"
           v-model="form.email"
         />
 
@@ -42,6 +45,7 @@
           class="form-control"
           name="password"
           required
+					placeholder="Password"
           v-model="form.password"
         />
 
@@ -52,6 +56,7 @@
           class="form-control"
           name="password2"
           required
+					placeholder="Confirm password"
           v-model="form.password2"
         />
         <br />
@@ -62,7 +67,7 @@
           </span>
         </button>
       </form>
-      <div class="six columns">
+      <div class="seven columns">
         <img src="@/assets/reg.png" alt class="reg" />
       </div>
     </div>
@@ -120,6 +125,9 @@ export default {
 </script>
 
 <style scoped>
+.zero {
+	margin: 0;
+}
 .top {
   margin-top: 2em;
 }
@@ -140,6 +148,20 @@ button:disabled:hover {
 
 .submitted {
   margin-top: 3em;
+}
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-width: 0.2em;
+	border-radius: 0.5em;
+	border-color: rgba(156, 156, 156, 0.2);
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(187, 104, 212, 0.3);
+  border-width: 0.2em;
+  border-radius: 0.5em;
 }
 
 /* Loader */

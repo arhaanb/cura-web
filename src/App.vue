@@ -22,6 +22,10 @@
 </template>
 
 <style>
+input,
+textarea {
+  font-family: "raleway";
+}
 ::-moz-selection {
   /* Code for Firefox */
   color: #222;
@@ -72,7 +76,9 @@ button {
 }
 
 #nav .right a {
-  margin-left: 1em;
+	margin-left: 1em;
+	text-decoration: none;
+	font-size: 1.2em;
 }
 
 #nav a {
