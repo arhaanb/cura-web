@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div class="row section1">
-      <div class="five columns">
+      <div class="five columns text">
         <h1>Cura.</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -67,5 +67,16 @@ a:hover {
 }
 .more {
   margin-left: 1.5em;
+}
+@media (max-width: 550px) {
+	.row {
+		flex-direction: column;
+	}
+	.section1 {
+		margin-top: 4em;
+	}
+	.text {
+		margin-bottom: 2em;
+	}
 }
 </style>
