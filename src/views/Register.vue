@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <div v-if="error">{{error}}</div>
     <div v-if="submitted" class="six columns submitted">
       <h4>Thank you for registering. You can continue on the Cura mobile app.</h4>
       <button>Download</button>
@@ -8,6 +7,7 @@
     <div v-if="!submitted" class="top">
       <form @submit.prevent="submit" class="six columns submitted">
         <h2>Register</h2>
+        <div v-if="error">{{error}}</div>
         <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
 
         <input
@@ -112,6 +112,7 @@ export default {
             this.error = err.message;
           });
         this.loading = false;
+        this.submitted = true;
       }
     }
   }
@@ -120,7 +121,7 @@ export default {
 
 <style scoped>
 .top {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 .reg {
   width: 100%;
