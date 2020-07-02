@@ -71,13 +71,17 @@ img,
   padding: 1em 0;
 }
 
+#nav .right a {
+	margin-left: 1em;
+}
+
 #nav a {
   /* font-weight: bold; */
-  color: #2c3e50;
+  color: #222;
 }
 
 #nav a.router-link-exact-active {
-  color: rgba(224, 150, 247, 1);
+  color: rgb(171, 84, 197);
 }
 
 .right {
