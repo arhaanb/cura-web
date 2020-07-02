@@ -22,7 +22,6 @@
 </template>
 
 <style>
-
 ::-moz-selection {
   /* Code for Firefox */
   color: #222;
@@ -34,7 +33,8 @@
   background: rgba(187, 104, 212, 0.5);
 }
 img,
-.noselect {
+.noselect,
+button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -72,7 +72,7 @@ img,
 }
 
 #nav .right a {
-	margin-left: 1em;
+  margin-left: 1em;
 }
 
 #nav a {
