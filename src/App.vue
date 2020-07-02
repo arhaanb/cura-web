@@ -1,32 +1,89 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <div id="nav">
+        <div class="logo">
+          <router-link to="/">
+            <img src="@/assets/cura.png" alt="Cura" class="cura" />
+          </router-link>
+        </div>
+        <div class="right">
+          <router-link to="/about">About</router-link>
+          <router-link to="/register">Register</router-link>
+        </div>
+      </div>
     </div>
-    <router-view/>
+    <main class="App__main">
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
+    </main>
   </div>
 </template>
 
 <style>
+::-moz-selection {
+  /* Code for Firefox */
+  color: #222;
+  background: rgba(187, 104, 212, 0.5);
+}
+
+::selection {
+  color: #222;
+  background: rgba(187, 104, 212, 0.5);
+}
+img,
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Transitions */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* ----------- */
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
 }
 
 #nav a {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgba(224, 150, 247, 1);
+}
+
+.right {
+  display: flex;
+}
+
+.cura {
+  width: 7em;
 }
 </style>
