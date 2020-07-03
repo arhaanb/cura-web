@@ -17,9 +17,10 @@
       </div>
     </div>
     <p
-      class="zero"
+      class="zero top"
     >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">This data is for the country - India</p>
+    <p class="zero">Updates automatically every few hours.</p>
   </div>
 </template>
 
@@ -39,15 +40,6 @@ export default {
       .then(response => (this.info = response.data));
     var timebro = this.info.lastUpdate;
     this.date = new Date(timebro);
-    // datevalues = [
-    //   date.getFullYear(),
-    //   date.getMonth() + 1,
-    //   date.getDate(),
-    //   date.getHours(),
-    //   date.getMinutes(),
-    //   date.getSeconds()
-    // ];
-    // console.log(datevalues);
     this.loading = false;
   }
 };
@@ -56,6 +48,9 @@ export default {
 <style scoped>
 .zero {
   margin: 0;
+}
+.top {
+  margin-top: 1.5em;
 }
 .data {
   display: flex;
