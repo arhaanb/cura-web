@@ -18,7 +18,7 @@
     </div>
     <p
       class="zero top"
-			v-if="date"
+      v-if="date"
     >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">This data is for the country - India</p>
     <p class="zero">Updates automatically every few hours.</p>
@@ -69,7 +69,7 @@ export default {
 }
 
 .confirmed {
-  border-color: yellow;
+  border-color: #c975e6;
 }
 
 .deaths {
@@ -77,7 +77,7 @@ export default {
 }
 
 .recovered {
-  border-color: green;
+  border-color: rgb(79, 161, 110);
 }
 
 @media (max-width: 550px) {
