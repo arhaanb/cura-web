@@ -17,7 +17,7 @@
           </router-link>
         </div>
       </div>
-      <img src="@/assets/mock.png" alt class="seven columns floating" draggable="false" />
+      <img src="@/assets/iphone-min.png" alt class="seven columns floating" draggable="false" />
       <!-- <img src="https://gh.arhaanb.co/v1/img/ponder.png" alt class="seven columns" draggable="false"/> -->
     </div>
   </div>
