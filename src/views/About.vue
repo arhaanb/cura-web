@@ -16,7 +16,9 @@
         <h5>Deaths</h5>
       </div>
     </div>
-    <p class="zero">Last update on: {{info.lastUpdate}}</p>
+    <p
+      class="zero"
+    >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">This data is for the country - India</p>
   </div>
 </template>
@@ -27,13 +29,25 @@ export default {
   data() {
     return {
       info: null,
-      loading: true
+      loading: true,
+      date: ""
     };
   },
   async mounted() {
     await axios
       .get("https://covid19.mathdro.id/api/countries/india")
       .then(response => (this.info = response.data));
+    var timebro = this.info.lastUpdate;
+    this.date = new Date(timebro);
+    // datevalues = [
+    //   date.getFullYear(),
+    //   date.getMonth() + 1,
+    //   date.getDate(),
+    //   date.getHours(),
+    //   date.getMinutes(),
+    //   date.getSeconds()
+    // ];
+    // console.log(datevalues);
     this.loading = false;
   }
 };
