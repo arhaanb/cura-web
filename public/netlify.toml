@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/minet"
+  to = "https://api.minet.co"
+  status = 200
