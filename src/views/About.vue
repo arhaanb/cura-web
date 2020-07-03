@@ -16,6 +16,8 @@
         <h5>Deaths</h5>
       </div>
     </div>
+    <p class="zero">Last update on: {{info.lastUpdate}}</p>
+    <p class="zero">This data is for the country - India</p>
   </div>
 </template>
 
@@ -39,6 +41,9 @@ export default {
 </script>
 
 <style scoped>
+.zero {
+  margin: 0;
+}
 .data {
   display: flex;
   justify-content: center;
