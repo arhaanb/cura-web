@@ -27,11 +27,10 @@ export default {
   data() {
     return {
       info: null,
-      loading: false
+      loading: true
     };
   },
   async mounted() {
-    this.loading = true;
     await axios
       .get("https://covid19.mathdro.id/api/countries/india")
       .then(response => (this.info = response.data));
