@@ -1,3 +1,9 @@
 [[redirects]]
   from = "/minet"
   to = "https://api.minet.co"
+
+
+
+[[redirects]]
+  from = "/*"
+  to = "index.html"
