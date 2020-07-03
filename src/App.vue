@@ -18,6 +18,17 @@
         <router-view />
       </transition>
     </main>
+    <footer class="container">
+      <div class="flex">
+        <div class="socials">
+          <a href="//github.com/arhaanb" class="link" target="_blank">GitHub</a>
+          <a href="//instagram.com/arhaan_bahadur" class="link" target="_blank">Instagram</a>
+          <a href="//twitter.com/arhaan_bahadur" class="link" target="_blank">Twitter</a>
+          <a href="//open.spotify.com/user/arhaanb" class="link" target="_blank">Spotify</a>
+        </div>
+        <h6 class="title">Made with <i class="fa fa-heart"></i> by MINET</h6>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -76,9 +87,9 @@ button {
 }
 
 #nav .right a {
-	margin-left: 1em;
-	text-decoration: none;
-	font-size: 1.2em;
+  margin-left: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 #nav a {
