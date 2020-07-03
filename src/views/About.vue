@@ -2,7 +2,7 @@
   <div class="container">
     <h1>About us</h1>
     <h5 v-if="loading">Loading</h5>
-    <div class="data">
+    <div class="data" v-if="info">
       <div class="card confirmed three columns">
         <h3>{{info.confirmed.value}}</h3>
         <h5>Confirmed</h5>
@@ -18,6 +18,7 @@
     </div>
     <p
       class="zero top"
+			v-if="date"
     >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">This data is for the country - India</p>
     <p class="zero">Updates automatically every few hours.</p>
