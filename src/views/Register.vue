@@ -7,7 +7,7 @@
     <div v-if="!submitted" class="top">
       <form @submit.prevent="submit" class="five columns submitted">
         <h2 class="zero">Register</h2>
-				<p>Stay safe with Cura.</p>
+        <p>Stay safe with Cura.</p>
         <div v-if="error">{{error}}</div>
         <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
 
@@ -19,7 +19,7 @@
           value
           required
           autofocus
-					placeholder="Name"
+          placeholder="Name"
           v-model="form.name"
         />
 
@@ -33,7 +33,7 @@
           value
           required
           autofocus
-					placeholder="Email"
+          placeholder="Email"
           v-model="form.email"
         />
 
@@ -45,7 +45,7 @@
           class="form-control"
           name="password"
           required
-					placeholder="Password"
+          placeholder="Password"
           v-model="form.password"
         />
 
@@ -56,10 +56,9 @@
           class="form-control"
           name="password2"
           required
-					placeholder="Confirm password"
+          placeholder="Confirm password"
           v-model="form.password2"
         />
-        <br />
         <button type="submit" :disabled="loading">
           <span v-if="!loading">Register</span>
           <span v-if="loading">
@@ -126,7 +125,7 @@ export default {
 
 <style scoped>
 .zero {
-	margin: 0;
+  margin: 0;
 }
 .top {
   margin-top: 2em;
@@ -137,6 +136,9 @@ export default {
 }
 input {
   width: 100%;
+}
+button {
+  margin-top: 2em;
 }
 button:disabled {
   background: rgb(230, 180, 245);
@@ -153,8 +155,8 @@ input,
 textarea {
   background-color: rgba(255, 255, 255, 0.3);
   border-width: 0.2em;
-	border-radius: 0.5em;
-	border-color: rgba(156, 156, 156, 0.2);
+  border-radius: 0.5em;
+  border-color: rgba(156, 156, 156, 0.2);
 }
 
 input:focus,
@@ -204,5 +206,14 @@ textarea:focus {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 550px) {
+	.reg {
+		margin-top: 1em;
+	}
+	.submitted {
+		margin-top: 1em;
+	}
 }
 </style>
