@@ -6,8 +6,8 @@
       <div class="five columns text">
         <h1>Cura.</h1>
         <p>
-          Let us guide you on your way towards a future immune to COVID-19. Check out our mobile 
-					app for more dynamic content.
+          Let us guide you on your way towards a future immune to COVID-19. Check out our mobile
+          app for more dynamic content.
         </p>
         <div class="block noselect">
           <button>Download</button>
@@ -17,7 +17,8 @@
           </router-link>
         </div>
       </div>
-      <img src="https://gh.arhaanb.co/v1/img/ponder.png" alt class="seven columns" draggable="false"/>
+      <img src="@/assets/mock.png" alt class="seven columns floating" draggable="false" />
+      <!-- <img src="https://gh.arhaanb.co/v1/img/ponder.png" alt class="seven columns" draggable="false"/> -->
     </div>
   </div>
 </template>
@@ -35,6 +36,28 @@ export default {
 </script>
 
 <style scoped>
+/* Animation */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
 .mock {
   width: 50%;
 }
@@ -56,7 +79,7 @@ button:hover {
   color: #fff;
 }
 button:active {
-	color: #fff;
+  color: #fff;
 }
 a {
   color: rgb(187, 104, 212);
@@ -69,14 +92,14 @@ a:hover {
   margin-left: 1.5em;
 }
 @media (max-width: 550px) {
-	.row {
-		flex-direction: column;
-	}
-	.section1 {
-		margin-top: 4em;
-	}
-	.text {
-		margin-bottom: 2em;
-	}
+  .row {
+    flex-direction: column;
+  }
+  .section1 {
+    margin-top: 4em;
+  }
+  .text {
+    margin-bottom: 2em;
+  }
 }
 </style>
