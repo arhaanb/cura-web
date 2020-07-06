@@ -9,32 +9,19 @@
         <h2 class="zero">Register</h2>
         <p>Stay safe with Cura.</p>
         <div v-if="error">{{error}}</div>
-        <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+
+        <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
 
         <input
-          id="name"
+          id="username"
           type="text"
           class="form-control"
-          name="name"
+          name="username"
           value
           required
           autofocus
-          placeholder="Name"
-          v-model="form.name"
-        />
-
-        <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
-
-        <input
-          id="email"
-          type="email"
-          class="form-control"
-          name="email"
-          value
-          required
-          autofocus
-          placeholder="Email"
-          v-model="form.email"
+          placeholder="Username"
+          v-model="form.username"
         />
 
         <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
@@ -59,6 +46,19 @@
           placeholder="Confirm password"
           v-model="form.password2"
         />
+
+        <label for="vaccinated">Have you been vaccinated?</label>
+        <div class="switchboc">
+          <label for>No</label>
+          <label class="switch">
+            <input type="checkbox" value="1" v-model="form.vaccinated" />
+            <span class="slider round"></span>
+          </label>
+          <label for>Yes</label>
+        </div>
+
+        <br class="noselect" />
+
         <button type="submit" :disabled="loading">
           <span v-if="!loading">Register</span>
           <span v-if="loading">
@@ -76,15 +76,16 @@
 
 <script>
 import firebase from "firebase";
-
+import axios from "axios";
 export default {
   data() {
     return {
       form: {
         name: "",
-        email: "",
+        username: "",
         password: "",
-        password2: ""
+        password2: "",
+        vaccinated: 0
       },
       error: null,
       loading: false,
@@ -104,19 +105,32 @@ export default {
       } else {
         firebase
           .auth()
-          .createUserWithEmailAndPassword(this.form.email, this.form.password)
+          .createUserWithEmailAndPassword(
+            this.form.username + "@minet.com",
+            this.form.password
+          )
           .then(data => {
             data.user
               .updateProfile({
                 displayName: this.form.name
               })
-              .then(() => {});
+              .then(() => {
+                axios
+                  .post(`https://api.arhaanb.co/cura/users`, {
+                    username: this.form.username,
+                    vaccinated: this.form.vaccinated
+                  })
+                  .then(response => {})
+                  .catch(e => {
+                    this.errors.push(e);
+                  });
+                this.loading = false;
+                this.submitted = true;
+              });
           })
           .catch(err => {
             this.error = err.message;
           });
-        this.loading = false;
-        this.submitted = true;
       }
     }
   }
@@ -166,6 +180,15 @@ textarea:focus {
   border-radius: 0.5em;
 }
 
+.switchboc {
+  display: flex;
+  align-items: center;
+}
+
+.switchboc label {
+  margin-right: 1em;
+}
+
 /* Loader */
 .loader,
 .loader:after {
@@ -209,11 +232,72 @@ textarea:focus {
 }
 
 @media (max-width: 550px) {
-	.reg {
-		margin-top: 1em;
-	}
-	.submitted {
-		margin-top: 1em;
-	}
+  .reg {
+    margin-top: 1em;
+  }
+  .submitted {
+    margin-top: 1em;
+  }
+}
+
+/* SLider shit */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(187, 104, 212);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(187, 104, 212);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 </style>

@@ -1,39 +1,44 @@
 <template>
-  <div id="app">
-    <div class="container">
-      <div id="nav">
-        <div class="logo">
-          <router-link to="/">
-            <img src="@/assets/cura.png" alt="Cura" class="cura" />
-          </router-link>
-        </div>
-        <div class="right">
-          <router-link to="/about">About</router-link>
-          <router-link to="/register">Register</router-link>
+  <div id="app" class="APP">
+    <div class="everything">
+      <div class="container">
+        <div id="nav">
+          <div class="logo">
+            <router-link to="/">
+              <img src="@/assets/cura.png" alt="Cura" class="cura" />
+            </router-link>
+          </div>
+          <div class="right">
+            <router-link to="/about">About</router-link>
+            <router-link to="/register">Register</router-link>
+          </div>
         </div>
       </div>
+      <main class="App__main">
+        <transition name="fade" mode="out-in">
+          <router-view />
+        </transition>
+      </main>
+      <footer class="container noselect">
+        <div class="flex">
+          <div class="socials">
+            <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
+            <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
+            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
+          </div>
+          <h6 class="title">
+            Made with
+            <i class="fa fa-heart heart"></i> by MINET
+          </h6>
+        </div>
+      </footer>
     </div>
-    <main class="App__main">
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
-    </main>
-    <footer class="container noselect">
-      <div class="flex">
-        <div class="socials">
-          <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
-          <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
-          <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
-        </div>
-        <h6 class="title">Made with <i class="fa fa-heart heart"></i> by MINET</h6>
-      </div>
-    </footer>
   </div>
 </template>
 
 <style>
 .heart {
-	color: rgb(236, 85, 85);
+  color: rgb(236, 85, 85);
 }
 input,
 textarea {

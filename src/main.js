@@ -5,14 +5,13 @@ import store from './store'
 import * as firebase from "firebase"
 
 const configOptions = {
-	apiKey: "AIzaSyBWWzAucUGVF5mJD1y5Qmc-pCaQ2G5zz1o",
-	authDomain: "minet-3f92e.firebaseapp.com",
-	databaseURL: "https://minet-3f92e.firebaseio.com",
-	projectId: "minet-3f92e",
-	storageBucket: "minet-3f92e.appspot.com",
-	messagingSenderId: "1038148748536",
-	appId: "1:1038148748536:web:da555f8152698ae369e70d",
-	measurementId: "G-TYS1RJ17Y3"
+	apiKey: "AIzaSyBm8FD1icuVyrhoRPjwhuWWQXJXiYgvsqI",
+	authDomain: "cura-64684.firebaseapp.com",
+	databaseURL: "https://cura-64684.firebaseio.com/",
+	projectId: "cura-64684",
+	storageBucket: "cura-64684.appspot.com",
+	messagingSenderId: "862840094498",
+	appId: "1:862840094498:web:6e57b96b9b0e801cc76f7b"
 };
 
 Vue.config.productionTip = false

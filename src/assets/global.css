@@ -17,23 +17,6 @@
 	background-color: rgb(171, 84, 197);
 }
 
-html, body, .App__main {
-	height: 90%;
-	margin: 0;
-}
-
-/* Trick */
-
-body, .App__main {
-	display: flex;
-	flex-direction: column;
-}
-
-footer {
-	margin-top: auto;
-	/* padding: 1em 0; */
-}
-
 a {
 	text-decoration: none;
 	color: #121314;
@@ -82,4 +65,21 @@ button:active {
 
 input {
 	background-color: rgba(255, 255, 255, 0.336);
+}
+
+.APP, .everything {
+	height: 100%;
+	margin: 0;
+}
+
+/* Trick */
+
+.APP {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: auto;
+	padding: 1em 0;
 }

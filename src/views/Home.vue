@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div class="row section1">
       <div class="five columns text">
         <h1>Cura.</h1>
@@ -18,20 +16,13 @@
         </div>
       </div>
       <img src="@/assets/iphone-min.png" alt class="seven columns floating" draggable="false" />
-      <!-- <img src="https://gh.arhaanb.co/v1/img/ponder.png" alt class="seven columns" draggable="false"/> -->
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
+  name: "Home"
 };
 </script>
 
@@ -42,8 +33,6 @@ export default {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
 }
 
 @keyframes floating {
