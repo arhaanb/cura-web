@@ -93,7 +93,7 @@ export default {
     };
   },
   methods: {
-    async submit() {
+    submit() {
       this.loading = true;
       if (this.form.password.length < 6) {
         this.error = "Password should be atleast 6 characters.";
@@ -115,7 +115,7 @@ export default {
                 displayName: this.form.name
               })
               .then(() => {
-                await axios
+                axios
                   .post(`https://api.arhaanb.co/cura/users`, {
                     username: this.form.username,
                     vaccinated: this.form.vaccinated
