@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 /* scrollbar shit */
 
 ::-webkit-scrollbar {
@@ -65,21 +70,4 @@ button:active {
 
 input {
 	background-color: rgba(255, 255, 255, 0.336);
-}
-
-.APP, .everything {
-	height: 100%;
-	margin: 0;
-}
-
-/* Trick */
-
-.APP {
-	display: flex;
-	flex-direction: column;
-}
-
-footer {
-	margin-top: auto;
-	padding: 1em 0;
 }

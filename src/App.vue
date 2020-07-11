@@ -1,62 +1,77 @@
 <template>
-  <div id="app" class="APP">
-    <div class="everything">
-      <div class="container">
-        <div id="nav">
-          <div class="logo">
-            <router-link to="/">
-              <img src="@/assets/cura.png" alt="Cura" class="cura" />
-            </router-link>
-          </div>
-          <div class="right">
-            <router-link to="/about">About</router-link>
-            <router-link to="/register">Register</router-link>
-          </div>
+  <div id="app">
+    <div class="container">
+      <div id="nav">
+        <div class="logo">
+          <router-link to="/">
+            <img src="@/assets/cura.png" alt="Cura" class="cura" />
+          </router-link>
+        </div>
+        <div class="right">
+          <router-link to="/about">About</router-link>
+          <router-link to="/register">Register</router-link>
         </div>
       </div>
-      <main class="App__main">
-        <transition name="fade" mode="out-in">
-          <router-view />
-        </transition>
-      </main>
-      <!-- <iframe
+    </div>
+    <main class="App__main">
+      <transition name="fade" mode="out-in">
+        <router-view class="router" />
+      </transition>
+    </main>
+    <!-- <iframe
         allow="microphone;"
         width="350"
         height="430"
         src="https://console.dialogflow.com/api-client/demo/embedded/df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
-      ></iframe>-->
-      <df-messenger
-        chat-icon="f8dd78d6-1704-4697-a88d-e1f04ce67a54_x.png"
-        intent="WELCOME"
-        chat-title="Cura"
-        agent-id="df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
-        language-code="en"
-      ></df-messenger>
-      <footer class="container noselect">
-        <div class="flex">
-          <div class="socials">
-            <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
-            <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
-            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
-          </div>
-          <h6 class="title">
-            Made with
-            <i class="fa fa-heart heart"></i> by MINET
-          </h6>
+    ></iframe>-->
+    <df-messenger
+      chat-icon="f8dd78d6-1704-4697-a88d-e1f04ce67a54_x.png"
+      intent="WELCOME"
+      chat-title="Cura"
+      agent-id="df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
+      language-code="en"
+    ></df-messenger>
+    <footer class="footer container noselect">
+      <div class="flex">
+        <div class="socials">
+          <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
+          <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
+          <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
         </div>
-      </footer>
-    </div>
+        <h6 class="title">
+          Made with
+          <i class="fa fa-heart heart"></i> by MINET
+        </h6>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style>
+html,
+body {
+  height: 100%;
+}
+
+div#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer.footer {
+	margin-top: auto;
+}
+
 .heart {
   color: rgb(236, 85, 85);
 }
+
 input,
 textarea {
   font-family: "raleway";
 }
+
 ::-moz-selection {
   /* Code for Firefox */
   color: #222;
@@ -67,6 +82,7 @@ textarea {
   color: #222;
   background: rgba(187, 104, 212, 0.5);
 }
+
 img,
 .noselect,
 button {
