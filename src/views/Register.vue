@@ -163,8 +163,9 @@ button:disabled:hover {
 }
 
 .submitted {
-  margin-top: 3em;
+  margin-top: 2em;
 }
+
 input,
 textarea {
   background-color: rgba(255, 255, 255, 0.3);
