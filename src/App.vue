@@ -60,7 +60,7 @@ div#app {
 }
 
 footer.footer {
-	margin-top: auto;
+  margin-top: auto;
 }
 
 .heart {
@@ -85,7 +85,8 @@ textarea {
 
 img,
 .noselect,
-button {
+button,
+br {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

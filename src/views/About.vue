@@ -15,7 +15,6 @@
         <h3>{{info.deaths.value}}</h3>
         <h5>Deaths</h5>
       </div>
-
     </div>
     <p
       class="zero top"
@@ -23,51 +22,90 @@
     >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">This data is for the country - India</p>
     <p class="zero">Updates automatically every few hours.</p>
-    <br>
-    <br>
-        <div class='SubTitle'>
+    <br />
+    <br />
+    <div class="SubTitle">
       <h3>What is Cura?</h3>
-      <p>Researchers worldwide are working around the clock to find a vaccine against SARS-CoV-2, the virus causing the COVID-19 pandemic. A fast-tracked vaccine development process could speed a successful candidate to market in approximately 12-18 months.
-When a vaccine is available though, it’s going to be chaotic. Hospitals and camps will get crowded and that could lead to a lot of problems. 
-Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds. This creates a lot of problems as people need to go out to get daily nessecities.
-To tackle both these problems, we present Cura. 
-An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.</p>
-      </div>
-      <br>
-      <div class='SubTitle'>
+      <p>
+        Researchers worldwide are working around the clock to find a vaccine against SARS-CoV-2, the virus causing the COVID-19 pandemic. A fast-tracked vaccine development process could speed a successful candidate to market in approximately 12-18 months.
+        When a vaccine is available though, it’s going to be chaotic. Hospitals and camps will get crowded and that could lead to a lot of problems.
+        Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds. This creates a lot of problems as people need to go out to get daily nessecities.
+        To tackle both these problems, we present Cura.
+        An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.
+      </p>
+    </div>
+    <br />
+    <div class="SubTitle">
       <h3>How the website Works.</h3>
-      <p>This website has been built using VueJS with registration via Firebase. It features a register page where you can register users to login via the app (you can also register via the app itself).
-While registering, you have the option of selecting whether you’re vaccinated or not. Depending on what you select, your dashboard on the app will toggle the certified badge.</p>
-      </div>
-      <br>
-            <div class='SubTitle'>
+      <p>
+        This website has been built using VueJS with registration via Firebase. It features a register page where you can register users to login via the app (you can also register via the app itself).
+        While registering, you have the option of selecting whether you’re vaccinated or not. Depending on what you select, your dashboard on the app will toggle the certified badge.
+      </p>
+    </div>
+    <br />
+    <div class="SubTitle">
       <h3>How the App Works.</h3>
-      <p>Cura has been built using React based Ionic, with authentication going through Googles’ Firebase.
-        The app features a registration page, followed by a login page. Once registered, users can log in to view their dashboard. Based on whether they registered themselves as vaccinated or not, their dashboard will toggle the cura certified badge. 
-        The users are registered to our database. For your convenience, we have displayed all users on <a href='https://api.arhaanb.co/cura/users'>api.arhaanb.co/cura/users</a> .
-        <br>Feel free to register a new user and view it on the link.<br>
-
-        On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit. 
-        The data for the hospitals is received from our API ,which was built using MongoDB and nodeJS and ExpressJS. 
+      <p>
+        Cura has been built using React based Ionic, with authentication going through Googles’ Firebase.
+        The app features a registration page, followed by a login page. Once registered, users can log in to view their dashboard. Based on whether they registered themselves as vaccinated or not, their dashboard will toggle the cura certified badge.
+        The users are registered to our database. For your convenience, we have displayed all users on
+      </p>
+      <a href="https://api.arhaanb.co/cura/users">api.arhaanb.co/cura/users</a> .
+      <p>Feel free to register a new user and view it on the link.</p>
+      <p>
+        On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.
+        The data for the hospitals is received from our API ,which was built using MongoDB and nodeJS and ExpressJS.
         The admin account on our app :
-        Username: minet
-        Password: minettime
-        offers a page where you can register hospitals. We’d recommend you register one and view it on the hospitals page, as well as on <a href='https://api.arhaanb.co/cura/hospitals'>api.arhaanb.co/cura/hospitals</a> .
-
-</p>
-      </div>
-      <br>
-      <div class='SubTitle'>
+      </p>Username: minet
+      Password: minettime
+      offers a page where you can register hospitals. We’d recommend you register one and view it on the hospitals page, as well as on
+      <a
+        href="https://api.arhaanb.co/cura/hospitals"
+      >api.arhaanb.co/cura/hospitals</a>
+      .
+    </div>
+    <br />
+    <div class="SubTitle">
       <h3>Other Assets</h3>
-      <p>The promotion video for Cura was made on <a href="https://www.adobe.com/in/products/aftereffects.html?gclid=CjwKCAjwxqX4BRBhEiwAYtJX7XZaZ_pSqzNe83D8lhErWjiGeuYcBiko8GWpcWagXYXbab48VR2GkBoC7LgQAvD_BwE&sdid=STLMM87Z&mv=search&ef_id=CjwKCAjwxqX4BRBhEiwAYtJX7XZaZ_pSqzNe83D8lhErWjiGeuYcBiko8GWpcWagXYXbab48VR2GkBoC7LgQAvD_BwE:G:s&s_kwcid=AL!3085!3!248207268690!e!!">Adobe After Effects </a>. 
-      <br>The music used is titled Trampoline, by artist <a href='https://www.youtube.com/channel/UCXCD1xqaiH1SFiTO-Wuztjg'>SHAED</a>.<br>
-The 3D model of the vaccine has been made on <a href="www.blender.org">Blender</a>. </p>
+      <p>
+        The promotion video for Cura was made on
+        <a
+          href="https://www.adobe.com/in/products/aftereffects.html?gclid=CjwKCAjwxqX4BRBhEiwAYtJX7XZaZ_pSqzNe83D8lhErWjiGeuYcBiko8GWpcWagXYXbab48VR2GkBoC7LgQAvD_BwE&sdid=STLMM87Z&mv=search&ef_id=CjwKCAjwxqX4BRBhEiwAYtJX7XZaZ_pSqzNe83D8lhErWjiGeuYcBiko8GWpcWagXYXbab48VR2GkBoC7LgQAvD_BwE:G:s&s_kwcid=AL!3085!3!248207268690!e!!"
+        >Adobe After Effects</a>.
+        <br />The music used is titled Trampoline, by artist
+        <a
+          href="https://www.youtube.com/channel/UCXCD1xqaiH1SFiTO-Wuztjg"
+        >SHAED</a>.
+        <br />The 3D model of the vaccine has been made on
+        <a href="www.blender.org">Blender</a>.
+      </p>
+    </div>
+    <br />
+    <br />
+
+    <h3>The team</h3>
+    <div class="team">
+      <div class="box six columns">
+        <img src="@/assets/arhaan.jpg" alt="Arhaan Bahadur" />
+        <div class="info">
+          <h4>Arhaan Bahadur</h4>
+          <p>Co-Founder</p>
+        </div>
       </div>
-      <br>
-      <br>
-       <img  src="@/assets/minte.png" alt class="minte" draggable="false" />
+
+      <div class="box six columns">
+        <img src="@/assets/ap.jpg" alt="Aditya Pramar" />
+        <div class="info">
+          <h4>Aditya Pramar</h4>
+          <p>Co-Founder</p>
+        </div>
+      </div>
+      <div class="u-cf"></div>
+    </div>
+    <p class="center">
+      <img src="@/assets/minte.png" alt class="minte" draggable="false" />
+    </p>
   </div>
-  
 </template>
 
 <script>
@@ -92,6 +130,27 @@ export default {
 </script>
 
 <style scoped>
+.box {
+  display: flex;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.box img {
+  width: 8em;
+  border-radius: 100%;
+  margin-right: 2em;
+}
+
+.box .info {
+	margin-bottom: 2em;
+}
+
+.box h4,
+.box p {
+  margin: 0;
+}
+
 .zero {
   margin: 0;
 }
@@ -125,9 +184,8 @@ export default {
   border-color: rgb(79, 161, 110);
 }
 
-.minte{
-  width: 100px;
-  margin-left: 50%;
+.minte {
+  width: 10em;
 }
 
 @media (max-width: 550px) {
@@ -139,5 +197,4 @@ export default {
     margin: 2em 0;
   }
 }
-
 </style>

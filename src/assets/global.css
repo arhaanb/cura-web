@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+.center {
+	text-align: center;
+}
+
 /* scrollbar shit */
 
 ::-webkit-scrollbar {

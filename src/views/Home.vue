@@ -8,7 +8,9 @@
           app for more dynamic content.
         </p>
         <div class="block noselect">
-          <button>Download</button>
+          <a href="@/assets/Cura.apk" download="Cura.apk">
+            <button>Download</button>
+          </a>
           <router-link to="/about" class="more">
             Learn more
             <i class="fas fa-long-arrow-alt-right"></i>
