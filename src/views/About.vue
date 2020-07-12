@@ -2,9 +2,11 @@
   <div class="container">
     <!-- <h1>About us</h1> -->
 
+    <br class="nvm" />
     <br />
-    <br />
+    <!-- <div class="flex-center"> -->
     <div class="seven columns">
+      <div class="flex-center"></div>
       <div class="SubTitle">
         <h3>What is Cura?</h3>
         <p>
@@ -14,15 +16,42 @@
           To tackle both these problems, we present Cura.
         </p>
         <p>An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.</p>
-        <p>For a detailed explanation of Cura, visit <a href="https://cura.arhaanb.co/present">This Page</a>.</p>
+        <p>
+          For a detailed explanation of Cura, visit
+          <a
+            href="https://cura.arhaanb.co/present"
+          >This Page</a>.
+        </p>
       </div>
       <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
-      <p>The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
-      serves as an info point for users</p>
-      <p>On the Request passes page, users can request a <b>Cura Pass</b>. Through the <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for. </p>
+      <p>
+        The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
+        serves as an info point for users
+      </p>
+      <p>
+        On the Request passes page, users can request a
+        <b>Cura Pass</b>. Through the
+        <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for.
+      </p>
       <br />
     </div>
     <div class="u-cf"></div>
+    <br class="nvm" />
+    <br />
+
+    <div class="vidpen">
+      <div>
+        <iframe
+          width="100%"
+          src="https://www.youtube.com/embed/MQhrpko-kq0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+    <br />
     <br />
     <br />
 
@@ -49,8 +78,8 @@
     >Last update on: {{date.getDate()}}/{{date.getMonth()}}/{{date.getFullYear()}} {{date.getHours()}}:{{date.getMinutes()}}:{{date.getSeconds()}}</p>
     <p class="zero">Updates automatically via the Covid API.</p>
 
-    <br />
-    <br />
+    <br class="nvm" />
+    <br class="nvm" />
     <br />
     <br />
 
@@ -74,7 +103,9 @@
       <div class="u-cf"></div>
     </div>
     <p class="center">
-      <img src="@/assets/minte.png" alt="MINET hot" class="minte" draggable="false" />
+      <a href="//minet.co">
+        <img src="@/assets/minte.png" alt="MINET hot" class="minte" draggable="false" />
+      </a>
     </p>
   </div>
 </template>
@@ -101,6 +132,25 @@ export default {
 </script>
 
 <style scoped>
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.vidpen {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .box {
   display: flex;
   align-items: center;
@@ -169,7 +219,10 @@ a {
   }
   .card {
     width: 100%;
-    margin: 2em 0;
+    margin: 0.5em 0;
+  }
+  .nvm {
+    display: none;
   }
 }
 </style>

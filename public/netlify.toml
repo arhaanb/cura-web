@@ -1,12 +1,10 @@
 [[redirects]]
-  from = "/minet"
-  to = "https://minet.co"
-
-[[redirects]]
   from = "/present"
   to = "https://docs.google.com/presentation/d/1CkapjPrIfY6Y1aZZTNtkpTt7aX3w-RymtY10l9uj36E/edit#slide=id.g8b5cc2c716_0_166"
 
-
+[[redirects]]
+  from = "/video"
+  to = "https://youtu.be/MQhrpko-kq0"
 
 
 
