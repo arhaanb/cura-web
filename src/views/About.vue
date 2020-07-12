@@ -75,6 +75,10 @@
           <b>Cura Pass</b>. Through the
           <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for.
         </p>
+        <p>
+          We also built an API using NodeJS, Express and MongoDB, to manage all users and certified hospitals from one place. Check it out at
+          <a href="//api.arhaanb.co/cura">api.arhaanb.co/cura</a>.
+        </p>
       </div>
     </div>
     <br />
