@@ -35,6 +35,7 @@
       <div class="flex">
         <div class="socials">
           <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
+          <a href="//github.com/AdityaPramar/Cura" class="link" target="_blank">App Source</a>
           <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
           <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
         </div>

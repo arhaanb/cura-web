@@ -14,8 +14,12 @@
           To tackle both these problems, we present Cura.
         </p>
         <p>An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.</p>
+        <p>For a detailed explanation of Cura, visit <a href="https://cura.arhaanb.co/present">This Page</a>.</p>
       </div>
       <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
+      <p>The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
+      serves as an info point for users</p>
+      <p>On the Request passes page, users can request a <b>Cura Pass</b>. Through the <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for. </p>
       <br />
     </div>
     <div class="u-cf"></div>
