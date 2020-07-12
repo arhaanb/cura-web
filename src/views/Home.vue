@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row section1">
-      <div class="five columns text">
+      <div class="moreresp five columns text">
         <h1>Cura.</h1>
         <p>
           Let us guide you on your way towards a future immune to COVID-19. Check out our mobile
@@ -17,7 +17,16 @@
           </router-link>
         </div>
       </div>
-      <img src="@/assets/iphone-min.png" alt class="seven columns floating" draggable="false" />
+      <div class="one columns nvm">
+        <br />
+      </div>
+      <div class="moreresp six columns">
+        <div class="nvm">
+          <br />
+          <br />
+        </div>
+        <img src="@/assets/minmock-min.png" alt class="floating mockup" draggable="false" />
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +38,10 @@ export default {
 </script>
 
 <style scoped>
+.mockup {
+  width: 100%;
+}
+
 /* Animation */
 .floating {
   animation-name: floating;
@@ -53,7 +66,7 @@ export default {
   width: 50%;
 }
 .section1 {
-  margin-top: 7em;
+  margin-top: 2em;
 }
 .row {
   display: flex;
@@ -82,6 +95,12 @@ a:hover {
 .more {
   margin-left: 1.5em;
 }
+@media (max-width: 750px) {
+  .moreresp.five.columns,
+  .moreresp.six.columns {
+    width: 100% !important;
+  }
+}
 @media (max-width: 550px) {
   .row {
     flex-direction: column;
@@ -92,5 +111,11 @@ a:hover {
   .text {
     margin-bottom: 2em;
   }
+  .nvm {
+    display: none;
+  }
+	.mockup {
+		margin-left: 10%;
+	}
 }
 </style>
