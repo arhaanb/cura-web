@@ -190,7 +190,7 @@ export default {
 .boxcard {
   width: 40%;
   border-style: solid;
-  border-color: royalblue;
+  border-color: #c975e6;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
