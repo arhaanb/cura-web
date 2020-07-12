@@ -5,37 +5,79 @@
     <br class="nvm" />
     <br />
     <!-- <div class="flex-center"> -->
-    <div class="seven columns">
-      <div class="flex-center"></div>
-      <div class="SubTitle">
-        <h3>What is Cura?</h3>
+    <h2 class="center zero">Cura, by MINET</h2>
+    <h5 class="center">An app that will keep you safe.</h5>
+    <br />
+    <div class="flex-center">
+      <div class="flexbruhh center">
+        <div class="boxcard">
+          <h4 class="zero" style="margin-top: 0.6em;">Vaccines</h4>
+          <p>Helping you manage the distribution of vaccines throughout the country, so that you stay safe.</p>
+        </div>
+        <div class="boxcard">
+          <h4>
+            <img src="https://i.postimg.cc/Z5C73fnX/CuraPass.png" alt draggable="false" />
+          </h4>
+          <p>
+            A new way to
+            <b>explore</b> during these difficult times.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>The problem</h3>
+    <div class="row">
+      <div class="seven columns text">
         <p>
           Researchers worldwide are working around the clock to find a vaccine against SARS-CoV-2, the virus causing the COVID-19 pandemic. A fast-tracked vaccine development process could speed a successful candidate to market in approximately 12-18 months.
           When a vaccine is available though, it’s going to be chaotic. Hospitals and camps will get crowded and that could lead to a lot of problems.
-          Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds. This creates a lot of problems as people need to go out to get daily nessecities.
-          To tackle both these problems, we present Cura.
         </p>
-        <p>An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.</p>
+        <p>Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds. This creates a lot of problems as people need to go out to get daily nessecities.</p>
         <p>
+          To tackle both these problems, we present
+          <b>Cura</b>.
+          An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.
           For a detailed explanation of Cura, visit
           <a
             href="https://cura.arhaanb.co/present"
-          >This Page</a>.
+          >this page</a>.
         </p>
       </div>
-      <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
-      <p>
-        The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
-        serves as an info point for users
-      </p>
-      <p>
-        On the Request passes page, users can request a
-        <b>Cura Pass</b>. Through the
-        <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for.
-      </p>
-      <br />
+      <div class="five columns">
+        <img src="@/assets/mockup3.png" alt="MOCKUP" class="mock" />
+      </div>
     </div>
     <div class="u-cf"></div>
+
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="five columns pages">
+        <p class="center">
+          <img src="@/assets/mockup4.png" alt="MOCKUP" />
+        </p>
+      </div>
+      <div class="seven columns">
+        <h3>Pages</h3>
+
+        <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
+        <p>
+          The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
+          serves as an info point for users
+        </p>
+        <p>
+          On the Request passes page, users can request a
+          <b>Cura Pass</b>. Through the
+          <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for.
+        </p>
+      </div>
+    </div>
+    <br />
     <br class="nvm" />
     <br />
 
@@ -132,6 +174,31 @@ export default {
 </script>
 
 <style scoped>
+.pages img {
+  width: 50%;
+  margin-top: -1em;
+}
+.mock {
+  width: 100%;
+  margin-top: -3em;
+}
+
+.flexbruhh {
+  display: flex;
+  justify-content: center;
+}
+.boxcard {
+  width: 40%;
+  border-style: solid;
+  border-color: royalblue;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+}
+.boxcard img {
+  width: 60%;
+  margin-bottom: -1em;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -214,14 +281,26 @@ a {
 }
 
 @media (max-width: 550px) {
-  .data {
+  .data,
+  .flexbruhh {
     flex-direction: column;
+  }
+  .boxcard {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1em;
   }
   .card {
     width: 100%;
     margin: 0.5em 0;
   }
   .nvm {
+    display: none;
+  }
+  .mock {
+    margin: 0;
+  }
+  .pages img {
     display: none;
   }
 }
