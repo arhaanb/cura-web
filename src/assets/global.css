@@ -36,6 +36,10 @@ a {
 	margin-right: 1em;
 }
 
+.link.zero {
+	margin: 0;
+}
+
 .link:hover {
 	color: #121314;
 }
@@ -74,4 +78,14 @@ button:active {
 
 input {
 	background-color: rgba(255, 255, 255, 0.336);
+}
+
+.anti-nvm {
+	display: none;
+}
+
+@media (max-width: 550px) {
+	.anti-nvm {
+		display: block;
+	}
 }

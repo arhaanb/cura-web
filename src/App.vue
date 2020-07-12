@@ -31,18 +31,22 @@
       agent-id="df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
       language-code="en"
     ></df-messenger>
-    <footer class="footer container noselect">
-      <div class="flex">
-        <div class="socials">
-          <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
-          <a href="//github.com/AdityaPramar/Cura" class="link" target="_blank">App Source</a>
-          <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
-          <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
+    <footer class="footer noselect">
+      <div class="container">
+        <div class="flex">
+          <div class="socials">
+            <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
+            <a href="//github.com/AdityaPramar/Cura" class="link" target="_blank">App Source</a>
+            <a href="/present" class="link" target="_blank">Presentation</a>
+            <br class="anti-nvm" />
+            <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
+            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
+          </div>
+          <h6 class="title text">
+            Made with
+            <i class="fa fa-heart heart"></i> by MINET
+          </h6>
         </div>
-        <h6 class="title text">
-          Made with
-          <i class="fa fa-heart heart"></i> by MINET
-        </h6>
       </div>
     </footer>
   </div>
@@ -64,8 +68,8 @@ div#app {
 }
 
 footer.footer {
-	margin-top: auto;
-	padding: 1em 0;
+  margin-top: auto;
+  padding: 1em 0;
 }
 
 .heart {
