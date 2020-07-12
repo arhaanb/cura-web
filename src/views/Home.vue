@@ -100,6 +100,9 @@ a:hover {
   .moreresp.six.columns {
     width: 100% !important;
   }
+  .nvm {
+    display: none;
+  }
 }
 @media (max-width: 550px) {
   .row {
@@ -111,11 +114,8 @@ a:hover {
   .text {
     margin-bottom: 2em;
   }
-  .nvm {
-    display: none;
+  .mockup {
+    margin-left: 10%;
   }
-	.mockup {
-		margin-left: 10%;
-	}
 }
 </style>

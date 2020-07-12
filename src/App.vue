@@ -38,7 +38,7 @@
           <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
           <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
         </div>
-        <h6 class="title">
+        <h6 class="title text">
           Made with
           <i class="fa fa-heart heart"></i> by MINET
         </h6>
@@ -48,6 +48,9 @@
 </template>
 
 <style>
+.title.text {
+  margin: 0;
+}
 html,
 body {
   height: 100%;
@@ -60,7 +63,8 @@ div#app {
 }
 
 footer.footer {
-  margin-top: auto;
+	margin-top: auto;
+	padding: 1em 0;
 }
 
 .heart {
