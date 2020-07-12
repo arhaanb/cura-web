@@ -180,7 +180,6 @@ export default {
 <style scoped>
 .pages img {
   width: 50%;
-  margin-top: -1em;
 }
 .mock {
   width: 100%;
