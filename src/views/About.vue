@@ -63,7 +63,7 @@
         </p>
       </div>
       <div class="seven columns">
-        <h3>Pages</h3>
+        <h3>Our app</h3>
 
         <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
         <p>
@@ -77,7 +77,9 @@
         </p>
         <p>
           We also built an API using NodeJS, Express and MongoDB, to manage all users and certified hospitals from one place. Check it out at
-          <a href="//api.arhaanb.co/cura">api.arhaanb.co/cura</a>.
+          <a
+            href="//api.arhaanb.co/cura"
+          >api.arhaanb.co/cura</a>.
         </p>
       </div>
     </div>
@@ -180,6 +182,7 @@ export default {
 <style scoped>
 .pages img {
   width: 50%;
+  margin-top: 2em;
 }
 .mock {
   width: 100%;
@@ -302,6 +305,7 @@ a {
   }
   .mock {
     margin: 0;
+    margin-top: 2em;
   }
   .pages img {
     display: none;
