@@ -2,7 +2,9 @@
   <div class="container">
     <div v-if="submitted" class="six columns submitted">
       <h4>Thank you for registering. You can continue on the Cura mobile app.</h4>
-      <button>Download</button>
+      <a href="/Cura.apk" download="Cura">
+        <button>Download</button>
+      </a>
     </div>
     <div v-if="!submitted" class="top">
       <form @submit.prevent="submit" class="five columns submitted">
