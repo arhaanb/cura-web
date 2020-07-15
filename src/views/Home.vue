@@ -115,7 +115,8 @@ a:hover {
     margin-bottom: 2em;
   }
   .mockup {
-    margin-left: 10%;
+    margin-left: 1em;
+		overflow-x: hidden;
   }
 }
 </style>
