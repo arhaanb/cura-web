@@ -129,7 +129,16 @@ export default {
               });
           })
           .catch(err => {
-            this.error = err.message;
+            if (
+              err.message ==
+              "The email address is already in use by another account."
+            ) {
+              this.error = "This username is not available.";
+            } else {
+              this.error = err.message;
+            }
+            this.submitted = false;
+            this.loading = false;
           });
       }
     }
