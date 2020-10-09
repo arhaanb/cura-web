@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://cura.arhaanb.co/">
-    <img alt="Cura by MINET" src="https://i.postimg.cc/859ws70r/splash.png" width="120"/>
+    <img alt="Cura by MINET" src="./src/assets/cura.png" width="120"/>
   </a>
 </p>
 
