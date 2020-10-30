@@ -16,7 +16,7 @@
         </div>
         <div class="boxcard">
           <h4>
-            <img src="https://i.postimg.cc/Z5C73fnX/CuraPass.png" alt draggable="false" />
+            <img src="@/assets/curapass.png" alt draggable="false" />
           </h4>
           <p>
             A new way to
