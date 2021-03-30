@@ -14,16 +14,10 @@
       </div>
     </div>
     <main class="App__main">
-      <transition name="fade" mode="out-in">
-        <router-view class="router" />
-      </transition>
+      <!-- <transition name="fade" mode="out-in"> -->
+      <router-view class="router" />
+      <!-- </transition> -->
     </main>
-    <!-- <iframe
-        allow="microphone;"
-        width="350"
-        height="430"
-        src="https://console.dialogflow.com/api-client/demo/embedded/df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
-    ></iframe>-->
     <df-messenger
       chat-icon="f8dd78d6-1704-4697-a88d-e1f04ce67a54_x.png"
       intent="WELCOME"
@@ -34,17 +28,32 @@
     <footer class="footer noselect">
       <div class="container">
         <div class="flex">
-          <div class="socials">
-            <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
-            <a href="//github.com/AdityaPramar/Cura" class="link" target="_blank">App Source</a>
+          <div class="socialsy">
+            <a href="//github.com/arhaanb/cura" class="link" target="_blank">
+              <span>Source</span>
+            </a>
+            <a
+              href="//github.com/AdityaPramar/Cura"
+              class="link"
+              target="_blank"
+            >
+              <span>App Source</span>
+            </a>
             <a href="/present" class="link" target="_blank">Presentation</a>
             <br class="anti-nvm" />
-            <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
-            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
+            <a href="//arhaanb.co" class="link" target="_blank">
+              <span>Arhaan Bahadur</span>
+            </a>
+            <a
+              href="//aditya-pramar.herokuapp.com"
+              class="link"
+              target="_blank"
+            >
+              <span>Aditya Pramar</span>
+            </a>
           </div>
           <h6 class="title text">
-            Made with
-            <i class="fa fa-heart heart"></i> by MINET
+            Made with 💖 by MINET
           </h6>
         </div>
       </div>
@@ -78,7 +87,7 @@ footer.footer {
 
 input,
 textarea {
-  font-family: "raleway";
+  font-family: 'raleway';
 }
 
 ::-moz-selection {

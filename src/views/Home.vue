@@ -5,16 +5,15 @@
         <div class="moreresp five columns text">
           <h1>Cura.</h1>
           <p>
-            Let us guide you on your way towards a future immune to COVID-19. Check out our mobile
-            app for more dynamic content.
+            Let us guide you on your way towards a future immune to COVID-19.
+            Check out our mobile app for more dynamic content.
           </p>
           <div class="block noselect">
             <a href="/Cura.apk" download="Cura">
               <button>Download</button>
             </a>
             <router-link to="/about" class="more">
-              Learn more
-              <i class="fas fa-long-arrow-alt-right"></i>
+              Learn more &rarr;
             </router-link>
           </div>
         </div>
@@ -26,7 +25,12 @@
             <br />
             <br />
           </div>
-          <img src="@/assets/minmock-min.png" alt class="floating mockup" draggable="false" />
+          <img
+            src="@/assets/minmock-min.png"
+            alt
+            class="floating mockup"
+            draggable="false"
+          />
         </div>
       </div>
     </div>
@@ -35,8 +39,8 @@
 
 <script>
 export default {
-  name: "Home"
-};
+  name: 'Home',
+}
 </script>
 
 <style scoped>
@@ -85,7 +89,7 @@ button {
   background: rgb(187, 104, 212);
   color: #fff;
   border: none;
-  font-family: "raleway";
+  font-family: 'raleway';
 }
 button:hover {
   background: rgb(150, 79, 172);
@@ -129,7 +133,7 @@ a:hover {
   }
   .flexbabe {
     height: auto;
-		margin-top: 2em;
+    margin-top: 2em;
   }
 }
 </style>

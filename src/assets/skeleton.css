@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-/* Grid
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 .container {
 	position: relative;
 	width: 100%;
@@ -18,16 +14,12 @@
 	box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
-
 @media (min-width: 400px) {
 	.container {
 		width: 85%;
 		padding: 0;
 	}
 }
-
-/* For devices larger than 550px */
 
 @media (min-width: 550px) {
 	.container {
@@ -85,57 +77,7 @@
 	.one-half.column {
 		width: 48%;
 	}
-	/* Offsets */
-	.offset-by-one.column, .offset-by-one.columns {
-		margin-left: 8.66666666667%;
-	}
-	.offset-by-two.column, .offset-by-two.columns {
-		margin-left: 17.3333333333%;
-	}
-	.offset-by-three.column, .offset-by-three.columns {
-		margin-left: 26%;
-	}
-	.offset-by-four.column, .offset-by-four.columns {
-		margin-left: 34.6666666667%;
-	}
-	.offset-by-five.column, .offset-by-five.columns {
-		margin-left: 43.3333333333%;
-	}
-	.offset-by-six.column, .offset-by-six.columns {
-		margin-left: 52%;
-	}
-	.offset-by-seven.column, .offset-by-seven.columns {
-		margin-left: 60.6666666667%;
-	}
-	.offset-by-eight.column, .offset-by-eight.columns {
-		margin-left: 69.3333333333%;
-	}
-	.offset-by-nine.column, .offset-by-nine.columns {
-		margin-left: 78.0%;
-	}
-	.offset-by-ten.column, .offset-by-ten.columns {
-		margin-left: 86.6666666667%;
-	}
-	.offset-by-eleven.column, .offset-by-eleven.columns {
-		margin-left: 95.3333333333%;
-	}
-	.offset-by-one-third.column, .offset-by-one-third.columns {
-		margin-left: 34.6666666667%;
-	}
-	.offset-by-two-thirds.column, .offset-by-two-thirds.columns {
-		margin-left: 69.3333333333%;
-	}
-	.offset-by-one-half.column, .offset-by-one-half.columns {
-		margin-left: 52%;
-	}
 }
-
-/* Base Styles
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 html {
 	font-size: 62.5%;
@@ -143,15 +85,11 @@ html {
 
 body {
 	font-size: 1.5em;
-	/* currently ems cause chrome bug misinterpreting rems on body element */
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #222;
 }
-
-/* Typography
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
@@ -195,8 +133,6 @@ h6 {
 	letter-spacing: 0;
 }
 
-/* Larger than phablet */
-
 @media (min-width: 550px) {
 	h1 {
 		font-size: 5.0rem;
@@ -222,9 +158,6 @@ p {
 	margin-top: 0;
 }
 
-/* Links
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 a {
 	color: #1EAEDB;
 }
@@ -232,9 +165,6 @@ a {
 a:hover {
 	color: #0FA0CE;
 }
-
-/* Buttons
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
 	display: inline-block;
@@ -256,11 +186,6 @@ a:hover {
 	box-sizing: border-box;
 }
 
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-	/* border-color: #888; */
-	/* outline: 0; */
-}
-
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
 	color: #FFF;
 	background-color: #33C3F0;
@@ -273,21 +198,15 @@ a:hover {
 	border-color: #1EAEDB;
 }
 
-/* Forms
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
 	height: 38px;
 	padding: 6px 10px;
-	/* The 6px vertically centers text on FF, ignored by Webkit */
 	background-color: #fff;
 	border: 1px solid #D1D1D1;
 	border-radius: 4px;
 	box-shadow: none;
 	box-sizing: border-box;
 }
-
-/* Removes awkward default styles on some inputs for iOS */
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
 	-webkit-appearance: none;
@@ -327,9 +246,6 @@ label>.label-body {
 	font-weight: normal;
 }
 
-/* Lists
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 ul {
 	list-style: circle inside;
 }
@@ -352,9 +268,6 @@ li {
 	margin-bottom: 1rem;
 }
 
-/* Code
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 code {
 	padding: .2rem .5rem;
 	margin: 0 .2rem;
@@ -371,9 +284,6 @@ pre>code {
 	white-space: pre;
 }
 
-/* Tables
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 th, td {
 	padding: 12px 15px;
 	text-align: left;
@@ -388,9 +298,6 @@ th:last-child, td:last-child {
 	padding-right: 0;
 }
 
-/* Spacing
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 button, .button {
 	margin-bottom: 1rem;
 }
@@ -402,9 +309,6 @@ input, textarea, select, fieldset {
 pre, blockquote, dl, figure, table, p, ul, ol, form {
 	margin-bottom: 2.5rem;
 }
-
-/* Utilities
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .u-full-width {
 	width: 100%;
@@ -424,9 +328,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	float: left;
 }
 
-/* Misc
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
 hr {
 	margin-top: 3rem;
 	margin-bottom: 3.5rem;
@@ -434,43 +335,18 @@ hr {
 	border-top: 1px solid #E1E1E1;
 }
 
-/* Clearing
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
-/* Self Clearing Goodness */
-
 .container:after, .row:after, .u-cf {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-/* Media Queries
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
-
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-/* Larger than mobile */
-
 @media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {}
 
-/* Larger than tablet */
-
 @media (min-width: 750px) {}
 
-/* Larger than desktop */
-
 @media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
 
 @media (min-width: 1200px) {}

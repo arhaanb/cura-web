@@ -1,3 +1,4 @@
+<br />
 <p align="center">
   <a href="https://cura.arhaanb.co/">
     <img alt="Cura by MINET" src="./src/assets/cura.png" width="120"/>
