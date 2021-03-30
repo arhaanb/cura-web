@@ -14,31 +14,17 @@
         <p>Stay safe with Cura.</p>
         <div v-if="error">{{ error }}</div>
 
-        <label for="username" class="col-md-4 col-form-label text-md-right">
-          Username
-        </label>
-
+        <label for="username">Username</label>
         <input
-          id="username"
           type="text"
-          class="form-control"
-          name="username"
-          value
           required
-          autofocus
           placeholder="Username"
           v-model="form.username"
         />
 
-        <label for="password" class="col-md-4 col-form-label text-md-right">
-          Password
-        </label>
-
+        <label for="password">Password</label>
         <input
-          id="password"
           type="password"
-          class="form-control"
-          name="password"
           required
           placeholder="Password"
           v-model="form.password"
@@ -46,10 +32,7 @@
 
         <label for="password">Confirm password</label>
         <input
-          id="password2"
           type="password"
-          class="form-control"
-          name="password2"
           required
           placeholder="Confirm password"
           v-model="form.password2"
