@@ -14,7 +14,11 @@
       </div>
     </div>
     <main>
-      <router-view class="router" />
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
     <df-messenger
       chat-icon="f8dd78d6-1704-4697-a88d-e1f04ce67a54_x.png"
@@ -58,78 +62,3 @@
     </footer>
   </div>
 </template>
-
-<style>
-.title.text {
-  margin: 0;
-}
-html,
-body {
-  height: 100%;
-}
-
-div#app {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-footer.footer {
-  margin-top: auto;
-  padding: 1em 0;
-}
-
-.heart {
-  color: rgb(236, 85, 85);
-}
-
-input,
-textarea {
-  font-family: 'raleway';
-}
-
-::-moz-selection {
-  color: #222;
-  background: rgba(187, 104, 212, 0.5);
-}
-
-::selection {
-  color: #222;
-  background: rgba(187, 104, 212, 0.5);
-}
-
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-#nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5em 0;
-}
-
-#nav .right a {
-  margin-left: 1em;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-#nav a {
-  color: #222;
-}
-
-#nav a.router-link-exact-active {
-  color: rgb(171, 84, 197);
-}
-
-.right {
-  display: flex;
-}
-
-.cura {
-  width: 7em;
-}
-</style>
