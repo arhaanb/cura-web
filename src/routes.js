@@ -1,4 +1,7 @@
 import Home from './views/Home.vue'
+import About from './views/About.vue'
+import Register from './views/Register.vue'
+import NotFound from './views/404.vue'
 
 export const routes = [
   {
@@ -9,16 +12,16 @@ export const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('./views/About.vue'),
+    component: About,
   },
   {
     path: '/register',
     name: 'Register',
-    component: () => import('./views/Register.vue'),
+    component: Register,
   },
   {
     path: '/*',
     name: '404',
-    component: () => import('./views/404.vue'),
+    component: NotFound,
   },
 ]
