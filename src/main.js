@@ -10,18 +10,18 @@ import './assets/global.css'
 const app = createApp(App)
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+	history: createWebHistory(),
+	routes,
 })
 
 const configOptions = {
-  apiKey: 'AIzaSyBm8FD1icuVyrhoRPjwhuWWQXJXiYgvsqI',
-  authDomain: 'cura-64684.firebaseapp.com',
-  databaseURL: 'https://cura-64684.firebaseio.com/',
-  projectId: 'cura-64684',
-  storageBucket: 'cura-64684.appspot.com',
-  messagingSenderId: '862840094498',
-  appId: '1:862840094498:web:6e57b96b9b0e801cc76f7b',
+	apiKey: 'AIzaSyBm8FD1icuVyrhoRPjwhuWWQXJXiYgvsqI',
+	authDomain: 'cura-64684.firebaseapp.com',
+	databaseURL: 'https://cura-64684.firebaseio.com/',
+	projectId: 'cura-64684',
+	storageBucket: 'cura-64684.appspot.com',
+	messagingSenderId: '862840094498',
+	appId: '1:862840094498:web:6e57b96b9b0e801cc76f7b',
 }
 
 firebase.initializeApp(configOptions)
