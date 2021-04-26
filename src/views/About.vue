@@ -146,7 +146,9 @@
 			</div>
 		</div>
 		<p class="zero top date" v-if="date">
-			Last update on: {{ date.getDate() }} {{ cap(months[date.getMonth()]) }},
+			Last update on: {{ date.getDate()
+			}}<sup>{{ superscr(date.getDate().toString()) }}</sup>
+			{{ cap(months[date.getMonth()]) }},
 			{{ date.getFullYear() }}
 			({{ date.getHours() }}:{{ date.getMinutes() }}:{{ date.getSeconds() }})
 		</p>
@@ -229,6 +231,20 @@ export default {
 		},
 		commas(x) {
 			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+		},
+		superscr(x) {
+			const num = x.slice(-1)
+			var scr = ''
+			if (num == 1) {
+				scr = 'st'
+			} else if (num == 2) {
+				scr = 'nd'
+			} else if (num == 3) {
+				scr = 'rd'
+			} else {
+				scr = 'th'
+			}
+			return scr
 		},
 	},
 	async mounted() {
