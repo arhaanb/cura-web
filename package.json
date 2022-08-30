@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^1.2.0",
 		"@vue/compiler-sfc": "^3.0.9",
-		"vite": "^2.1.4"
+		"vite": "^2.9.13"
 	},
 	"browserslist": [
 		"> 1%",
